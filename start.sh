@@ -1,4 +1,4 @@
 #!/bin/sh
 
-wg-quick up wg0
+wg-quick up $WIREGUARD_IFACE
 exec /pause

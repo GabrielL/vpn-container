@@ -5,5 +5,6 @@ RUN apk add --no-cache \
 	wireguard-tools
 
 COPY --from=gcr.io/google_containers/pause-amd64:3.0 /pause /pause
+COPY start.sh /start.sh
 
 CMD ["/start.sh"]
